@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"lcd1\startup_stm32f103xb.o"
+"lcd1\main.o"
+"lcd1\stm32f1xx_it.o"
+"lcd1\stm32f1xx_hal_msp.o"
+"lcd1\stm32f1xx_hal_gpio_ex.o"
+"lcd1\stm32f1xx_hal_i2c.o"
+"lcd1\stm32f1xx_hal.o"
+"lcd1\stm32f1xx_hal_rcc.o"
+"lcd1\stm32f1xx_hal_rcc_ex.o"
+"lcd1\stm32f1xx_hal_gpio.o"
+"lcd1\stm32f1xx_hal_dma.o"
+"lcd1\stm32f1xx_hal_cortex.o"
+"lcd1\stm32f1xx_hal_pwr.o"
+"lcd1\stm32f1xx_hal_flash.o"
+"lcd1\stm32f1xx_hal_flash_ex.o"
+"lcd1\stm32f1xx_hal_exti.o"
+"lcd1\stm32f1xx_hal_spi.o"
+"lcd1\stm32f1xx_hal_tim.o"
+"lcd1\stm32f1xx_hal_tim_ex.o"
+"lcd1\system_stm32f1xx.o"
+"lcd1\i2c_lcd.o"
+"lcd1\mk_dht11.o"
+"lcd1\ds1302.o"
+--strict --scatter "LCD1\LCD1.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "LCD1.map" -o LCD1\LCD1.axf
